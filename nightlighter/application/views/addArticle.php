@@ -16,7 +16,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home">Nightlighter Add Article</a>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home"><img src="<?php echo site_url('../bootstrap/images/nightlighter.png'); ?>" /></a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
@@ -31,15 +31,22 @@
 		</div>
 	</div>
 </nav>
-<ul class="treeview-menu">
-<li><a href="<?php echo site_url('blog/addCategory');?>"><i class="fa fa-angle-double-right"></i> Add Category</a></li>
+<div class="container-fluid">
+      <ul class="nav nav-tabs">
+        <li><a href="<?php echo site_url('blog/addCategory');?>"><i class="fa fa-angle-double-right"></i> Add Category</a></li>
 <li><a href="<?php echo site_url('blog/allCategory');?>"><i class="fa fa-angle-double-right"></i> View All Categories</a></li>
 <li><a href="<?php echo site_url('blog/addArticle');?>"><i class="fa fa-angle-double-right"></i> Add Article</a></li>
 <li><a href="<?php echo site_url('blog/allArticle');?>"><i class="fa fa-angle-double-right"></i> All Article</a></li>
-</ul>
+      </ul>
+</div>
+
+    
+  
 <!-- Right side column. Contains the navbar and content of the page -->
 <aside class="right-side">
 <!-- Content Header (Page header) -->
+<div class="container">
+
 <section class="content-header">
 <h1>
 Add New Article
@@ -88,7 +95,8 @@ Add New Article
 <input type="file" name="userfile[]" id="exampleInputFile" multiple>
 </div>
 <div class="box-footer">
-<button type="submit" name="addArticle" class="btn btn-primary">Submit</button>
+<button type="submit" name="addArticle" class="btn btn-warning">Submit</button>
+    </div>
 </div>
 </form>
 </div>
@@ -102,6 +110,9 @@ Add New Article
 </aside>
 <!-- /.right-side -->
 </div><!-- ./wrapper -->
+
+
+    
 <script type="text/javascript" src="<?php echo base_url("bootstrap/js/jquery-1.10.2.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("bootstrap/js/bootstrap.js"); ?>"></script>
 </body>

@@ -17,7 +17,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home">NightLighter Blog</a>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home"><img src="<?php echo site_url('../bootstrap/images/nightlighter.png'); ?>" /></a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
@@ -42,6 +42,7 @@
 		</div>
 	</div>
 </div>
+    
 <script type="text/javascript" src="<?php echo base_url("bootstrap/js/jquery-1.10.2.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("bootstrap/js/bootstrap.js"); ?>"></script>
 </body>

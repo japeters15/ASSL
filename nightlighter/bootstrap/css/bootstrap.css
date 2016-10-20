@@ -1589,12 +1589,12 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 800px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 900px;
   }
 }
 @media (min-width: 1200px) {
@@ -4166,7 +4166,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {

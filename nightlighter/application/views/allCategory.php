@@ -16,7 +16,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home">Nightlighter Categories</a>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home"><img src="<?php echo site_url('../bootstrap/images/nightlighter.png'); ?>" /></a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
@@ -31,12 +31,18 @@
 		</div>
 	</div>
 </nav>
-<ul class="treeview-menu">
-<li><a href="<?php echo site_url('blog/addCategory');?>"><i class="fa fa-angle-double-right"></i> Add Category</a></li>
+   
+<div class="container-fluid">
+      <ul class="nav nav-tabs">
+        <li><a href="<?php echo site_url('blog/addCategory');?>"><i class="fa fa-angle-double-right"></i> Add Category</a></li>
 <li><a href="<?php echo site_url('blog/allCategory');?>"><i class="fa fa-angle-double-right"></i> View All Categories</a></li>
 <li><a href="<?php echo site_url('blog/addArticle');?>"><i class="fa fa-angle-double-right"></i> Add Article</a></li>
 <li><a href="<?php echo site_url('blog/allArticle');?>"><i class="fa fa-angle-double-right"></i> All Article</a></li>
-</ul>
+      </ul>
+</div>
+<h1>
+Categories Created
+</h1>
 <table id="example1" class="table table-bordered table-striped">
 <thead>
 <tr>

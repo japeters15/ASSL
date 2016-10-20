@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Add Category</title>
 	<link rel="stylesheet" href="<?php echo base_url("bootstrap/css/bootstrap.css"); ?>">
+    
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -16,7 +17,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home">Nightlighter Add Category</a>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home"><img src="<?php echo site_url('../bootstrap/images/nightlighter.png'); ?>" /></a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
@@ -31,12 +32,20 @@
 		</div>
 	</div>
 </nav>
-<ul class="treeview-menu">
-<li><a href="<?php echo site_url('blog/addCategory');?>"><i class="fa fa-angle-double-right"></i> Add Category</a></li>
+   
+<div class="container-fluid">
+      <ul class="nav nav-tabs">
+        <li><a href="<?php echo site_url('blog/addCategory');?>"><i class="fa fa-angle-double-right"></i> Add Category</a></li>
 <li><a href="<?php echo site_url('blog/allCategory');?>"><i class="fa fa-angle-double-right"></i> View All Categories</a></li>
 <li><a href="<?php echo site_url('blog/addArticle');?>"><i class="fa fa-angle-double-right"></i> Add Article</a></li>
 <li><a href="<?php echo site_url('blog/allArticle');?>"><i class="fa fa-angle-double-right"></i> All Article</a></li>
-</ul>
+      </ul>
+</div>
+
+        <div class="container">
+<h1>
+Add New Category
+</h1>
 <form role="form" method = "POST" action = "<?php echo site_url('blog/addCategory');?>">
 <div class="box-body">
 <div class="form-group">
@@ -50,9 +59,10 @@
 </div>
 <!-- /.box-body -->
 <div class="box-footer">
-<button type="submit" name = "addCategory" class="btn btn-primary">Submit</button>
+<button type="submit" name = "addCategory" class="btn btn-warning">Submit</button>
 </div>
 </form>
+    </div>
 <?php if(!empty($msg)){ echo $msg;};?>
 </body>
 </html>
