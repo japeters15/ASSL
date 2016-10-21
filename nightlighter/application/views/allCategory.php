@@ -49,7 +49,6 @@ Categories Created
 <th>Title</th>
 <th>Description</th>
 <th>Published On</th>
-<th>Action</th>
 </tr>
 </thead>
 <tbody>
@@ -58,8 +57,6 @@ Categories Created
 <td><?php echo $row->Type;?></td>
 <td><?php echo $row->Description;?></td>
 <td><?php echo $row->CreatedDate;?></td>
-<td><a href="<?php echo site_url('blog/editCategory');?>/<?php echo $row->Id;?>">Edit</a>
-<a href="<?php echo site_url('blog/deleteCategory');?>/<?php echo $row->Id;?>">Delete</a></td>
 </tr>
 <?php } ?>
 </tbody>
